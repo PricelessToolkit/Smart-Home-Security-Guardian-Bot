@@ -1,0 +1,232 @@
+MQTT Information
+
+
+********************** DRIVING ******************************
+ TOPIC: "HABot/Commands/Steering"
+
+ "HABot/Commands/Steering"
+  Values = "right", "left", "forward", "backward", "stop".
+
+
+
+*********************** Control of periphery ******************
+
+ TOPIC:  "HABot/Commands/Data" 
+
+---------------DFPlayer Control ---------------------------
+
+   Copy mp3 folder into SD card folder name should be mp3 and file names 003,004,005...
+
+   if command starts with "mp3"  mp3xxxxxx
+   Values = "mp3XXAAA"  ( XX is Volium level 2 digits 00-30 ) (AAA is mp3 file name 001,002,003).
+
+
+ ---------- LED Controll or other things -------------------
+
+   if commands = 4 digits
+   Values = "1001",1002...... 
+
+
+
+*********************** Telemetry ************************
+
+BOT Publish Sensor Values in json.
+
+ TOPIC: "HABot/sensors"
+ Value = {"sensors": "HaBot","Light": 93,"Bat": 95,"Motion": 0}
+
+***************************************************************
+
+
+
+
+
+
+
+HOME ASSISTANT Configuration
+*********************************************************************************************
+
+1. In habot folder, file "app.js"  open it and change Your_HA_IP, Your_MQTT_Username, Your_MQTT_Password
+2. Copy habot folder to "config\www\custom_lovelace"  WARNING www folder is publicly avaliable !!!! "There is no access controll" Use VPN or WireGuard (Your Phone > VPN Client > INTERNET > VPN Server > Home assistant
+3. In HOME ASSISTANT create Webpage Card, in URL section "http://YOUR_homeassistant_IP_OR_DOMAIN_NAME:8123/local/custom_lovelace/habot/index.html"
+4. In HOME ASSISTANT create sensor "battery, Motion, Light Level".  "telemetryhabot.yaml" file includeed 
+5. In HOME ASSISTANT create picture card, its for video, in url section "http://HABot_IP/"
+
+
+sensor:
+ - platform: mqtt
+   name: "HABot Battery"
+   state_topic: "HABot/sensors"
+   json_attributes_topic: "HABot/sensors"
+   unit_of_measurement: '%'
+   value_template: '{{value_json.Bat}}'
+ - platform: mqtt
+   name: "HABot Light Level"
+   state_topic: "HABot/sensors"
+   json_attributes_topic: "HABot/sensors"
+   unit_of_measurement: '%'
+   value_template: '{{value_json.Light}}'
+ - platform: mqtt
+   name: "HABot Motion Sensor"
+   state_topic: "HABot/sensors"
+   json_attributes_topic: "HABot/sensors"
+   unit_of_measurement: ''
+   value_template: '{{value_json.Motion}}'
+
+
+
+
+For LED or DFPlayer controll
+In HA create GLANCE Card, the entity is required by card but not used  "use any entity"
+
+type: glance
+entities:
+  - entity: input_number.speed_control
+    name: I see you
+    tap_action:
+      navigation_path: none
+      url_path: none
+      action: call-service
+      service: mqtt.publish
+      service_data:
+        topic: HABot/Commands/Data
+        payload: mp320004
+
+HABot will play mp3 file number 004 with volume level of 20  "payload:  mp3 20 004"  volume 00-30
+
+
+
+
+My Full ui vertical stock
+
+**********************************
+
+type: vertical-stack
+cards:
+  - type: picture
+    image: http://YOUR_HABot_IP/
+    tap_action:
+      action: none
+    hold_action:
+      action: none
+  - type: glance
+    entities:
+      - entity: input_number.speed_control
+        name: ERROR
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: mp320003
+      - entity: input_number.speed_control
+        name: I see you
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: mp320004
+      - entity: input_number.speed_control
+        name: POLICE
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: mp320006
+      - entity: input_number.speed_control
+        name: MDF
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: mp320007
+      - entity: input_number.speed_control
+        name: Notify
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: mp320008
+      - entity: input_number.speed_control
+        name: Color 1
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: 1001
+      - entity: input_number.speed_control
+        name: Color 2
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: 1002
+      - entity: input_number.speed_control
+        name: Color 3
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: 1003
+      - entity: input_number.speed_control
+        name: Color 4
+        tap_action:
+          navigation_path: none
+          url_path: none
+          action: call-service
+          service: mqtt.publish
+          service_data:
+            topic: HABot/Commands/Data
+            payload: 1004
+    show_icon: false
+    show_state: false
+    state_color: false
+    show_name: true
+  - type: iframe
+    url: http://YOUR_Home_Assistant_IP_or_Domain_Name:8123/local/custom_lovelace/habot/index.html
+    aspect_ratio: 53%
+    title: HABot
+
+***************************************************************************************************
+
+
+
+
+
+Entities Card
+*****************************************
+type: entities
+entities:
+  - entity: sensor.habot_battery
+    name: Battery
+    icon: hass:battery
+  - entity: sensor.habot_light_level
+    name: Illumination
+  - entity: sensor.habot_motion_sensor
+    icon: hass:motion
+    name: Motion
+
+

@@ -1,0 +1,52 @@
+Code line / Config
+
+43 - Default DFPlayer volium
+69 - Default LED Brightness
+77 - Battery Calibration (arduino map function)
+78 - Light sensor calibration (arduino map function)
+106 - 168 LED or DFPlayer controll 
+
+************************************************************************
+
+ "HABot/Commands/Data"
+
+ --------------- Player Control ---------------------------
+  Copy mp3 folder into SD card folder name should be mp3 and file names 003,004,005...
+
+  if command starts mp3xxxxxx
+  Values = "mp3XXAAA"  ( XX is Volium level 2 digits 00-30 ) (AAA is mp3 file name 001,002,003).
+ ----------------------------------------------------------
+  
+ ---------- LED Controll ----------------------------------
+  if commands = 4 digits
+  Values = "1001",1002...... 
+ -----------------------------------------------------------
+
+(commands  4 digits from 1001 to 1004 is reserved for connection status indication) 
+		1001: // Searching WiFi                "Yellow"
+		1002: // WiFi Connected                "Green"
+		1003: // MQTT Failed or not Connected  "RED"
+		1004: // MQTT Connected                "BLUE"
+
+
+
+"Arduino SWITSH case compareson" You can add new case for your commands xxxx
+
+----------------------------------------------------------------
+
+            case xxxx: // name
+
+                 for(uint16_t i=0; i<leds.numPixels(); ) {
+                    leds.setPixelColor(i, 127, 22, 28);
+                    leds.show();
+
+                  if(millis() >= time_now + period10ms){
+                    time_now += period10ms;
+                    leds.clear();
+                    leds.show();
+                    i++;
+                     
+                    }
+                }
+
+----------------------------------------------------------------------

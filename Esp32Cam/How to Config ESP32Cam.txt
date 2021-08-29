@@ -1,0 +1,30 @@
+
+
+Code line: 32 - 37 Login information "Your_wifiname, Your_password, Your_mqtt_username, Your_mqtt_password, Your_mqtt/homeassistant server IP"
+Code line: 214 - 245 Stearing Calibration You need to tweak PWM values.
+
+**************************************************************************
+
+Since the resistors on servo controllers  have an "Value error %"
+You need to tweak settings ( PWM values "xxxx") so that the left and right mator
+spin at the same speed for "Forward" and "backward" and of course in the right direction. . For "LEFT, RIGHT" opposite directions and slower speed.  
+
+
+
+   if (Command == "forward")
+    {
+    steeringAnalogWrite(2, xxxx);
+    steeringAnalogWrite(4, xxxx);
+    }
+
+   if (Command == "backward")
+    {
+    steeringAnalogWrite(2, xxxx);
+    steeringAnalogWrite(4, xxxx);
+    }
+
+    if (Command == "stop")
+    {
+    steeringAnalogWrite(2, 0);
+    steeringAnalogWrite(4, 0);
+    }
