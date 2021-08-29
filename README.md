@@ -1,9 +1,52 @@
+Youtube Video
 https://youtu.be/2BBThH_CpSE
 
+[![habot](https://github.com/PricelessToolkit/Smart-Home-Security-Guardian-Bot/blob/main/Images/Thumbinal_HABot.jpg)](https://youtu.be/2BBThH_CpSE)
 
-# Scheme
 
-https://github.com/PricelessToolkit/Smart-Home-Security-Guardian-Bot/blob/main/Images/schemeFull.jpg
+
+
+# Features
+
+1: Tiny size
+
+2: Wireless Charging
+
+3: Voice Notifications
+
+4: LED Indication
+
+5: Build-in Motion sensor
+
+6: Build-in Light level Sensor
+
+7: MQTT Controls
+
+8: Live Video stream
+
+
+
+# Configuration Instructions
+"Config_Arduino.txt" "Config_ESP32Cam.txt" "Config_Home_Assistant.txt"
+
+
+
+
+
+
+
+
+
+
+
+# Connection diagram
+
+[![Connectiondiagram](https://github.com/PricelessToolkit/Smart-Home-Security-Guardian-Bot/blob/main/Images/schemeFull.jpg)
+
+
+
+
+
 
 
 
