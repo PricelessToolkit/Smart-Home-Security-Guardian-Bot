@@ -76,8 +76,7 @@ sensor:
 
 
 
-
-UI vertical stock EXAMPLE ALL in ONE
+For control use UI vertical stock EXAMPLE ALL in ONE
 
 **********************************
 
