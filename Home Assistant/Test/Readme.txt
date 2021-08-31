@@ -1,6 +1,6 @@
 Thys is for test "this code doesn't work"
 
-If u have experience creating custom UI cards for home assistant, then go ahead and try to make it works. I didn't succeed .
+And who know how to program like a Jedi, look at the test folder, and if u can please contribute to the project, It will be wonderful.
 
 I think problem is here 
 
