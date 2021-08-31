@@ -74,8 +74,9 @@ void setup(){
 
 
 void loop(){
-   int Batt = map(analogRead(A2), 650, 867, 0, 100);
-   int Light = map(analogRead(A0), 0, 1024, 0, 100);
+   int Batt = map(analogRead(A2), 650, 867, 0, 100); // (analogRead(A2), MIN, MAX, 0, 100)
+   // Serial.println(analogRead(A2); // Take note of min and max values when the battery is 3.2v and 4.2v. And write these values in line 77  MIN-MAX
+   int Light = map(analogRead(A0), 1, 1024, 0, 100);
    MotionState = digitalRead(MotionPin);
    
    doc["sensors0"] = "HaBot";
