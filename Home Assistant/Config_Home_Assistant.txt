@@ -21,7 +21,7 @@ MQTT Information
    Values = "mp3XXAAA"  ( XX is Volium level 2 digits 00-30 ) (AAA is mp3 file name 001,002,003).
 
 
- ---------- LED Controll or other things -------------------
+ ---------- LED Controll -------------------
 
    if commands = 4 digits
    Values = "1001",1002...... 
@@ -80,25 +80,6 @@ sensor:
 4. In HOME ASSISTANT create Webpage Card, in URL section "http://YOUR_homeassistant_IP_OR_DOMAIN_NAME:8123/local/custom_lovelace/habot/index.html"
 5. In HOME ASSISTANT create picture card, its for video, in url section "http://HABot_IP/"
 
-
-
-For LED or DFPlayer controll
-In HA create GLANCE Card, the entity is required by card but not used  "use any entity"
-
-type: glance
-entities:
-  - entity: sun.sun
-    name: I see you
-    tap_action:
-      navigation_path: none
-      url_path: none
-      action: call-service
-      service: mqtt.publish
-      service_data:
-        topic: HABot/Commands/Data
-        payload: mp320004
-
-HABot will play mp3 file number 004 with volume level of 20  "payload:  mp3 20 004"  volume 00-30
 
 
 
