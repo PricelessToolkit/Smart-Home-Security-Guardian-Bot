@@ -77,13 +77,6 @@ sensor:
 
 
 
-4. In HOME ASSISTANT create Webpage Card, in URL section "http://YOUR_homeassistant_IP_OR_DOMAIN_NAME:8123/local/custom_lovelace/habot/index.html"
-5. In HOME ASSISTANT create picture card, its for video, in url section "http://HABot_IP/"
-
-
-
-
-
 UI vertical stock EXAMPLE ALL in ONE
 
 **********************************
