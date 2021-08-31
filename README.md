@@ -5,7 +5,7 @@ https://youtu.be/2BBThH_CpSE
 [![habot](https://github.com/PricelessToolkit/Smart-Home-Security-Guardian-Bot/blob/main/Images/Thumbinal_HABot.jpg)](https://youtu.be/2BBThH_CpSE)
 
 
-
+Do you want to support me ? Subscribe and like!  
 
 # Features
 
@@ -101,3 +101,5 @@ Arduino Pro Mini 5v
 21: Aluminum or copper self-adhesive tape
 
 22: Resistors: 2 x 1K, 2 x 470R, 1x 10K
+
+23: Resistor 2x SMD 0806 2.7k
