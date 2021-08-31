@@ -48,9 +48,8 @@ HOME ASSISTANT Configuration
 
 1. In habot folder, file "app.js"  open it and change Your_HA_IP, Your_MQTT_Username, Your_MQTT_Password
 2. Copy habot folder to "config\www\custom_lovelace"  WARNING www folder is publicly avaliable !!!! "There is no access controll" Use VPN or WireGuard (Your Phone > VPN Client > INTERNET > VPN Server > Home assistant
-3. In HOME ASSISTANT create Webpage Card, in URL section "http://YOUR_homeassistant_IP_OR_DOMAIN_NAME:8123/local/custom_lovelace/habot/index.html"
-4. In HOME ASSISTANT create sensor "battery, Motion, Light Level".  "telemetryhabot.yaml" file includeed 
-5. In HOME ASSISTANT create picture card, its for video, in url section "http://HABot_IP/"
+3. In HOME ASSISTANT create sensor "battery, Motion, Light Level".  "telemetryhabot.yaml" file includeed 
+
 
 
 sensor:
@@ -76,6 +75,13 @@ sensor:
 
 
 
+
+
+4. In HOME ASSISTANT create Webpage Card, in URL section "http://YOUR_homeassistant_IP_OR_DOMAIN_NAME:8123/local/custom_lovelace/habot/index.html"
+5. In HOME ASSISTANT create picture card, its for video, in url section "http://HABot_IP/"
+
+
+
 For LED or DFPlayer controll
 In HA create GLANCE Card, the entity is required by card but not used  "use any entity"
 
@@ -97,7 +103,7 @@ HABot will play mp3 file number 004 with volume level of 20  "payload:  mp3 20 0
 
 
 
-UI vertical stock EXAMPLE
+UI vertical stock EXAMPLE ALL in ONE
 
 **********************************
 
