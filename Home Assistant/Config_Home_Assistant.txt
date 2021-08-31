@@ -81,7 +81,7 @@ In HA create GLANCE Card, the entity is required by card but not used  "use any 
 
 type: glance
 entities:
-  - entity: input_number.speed_control
+  - entity: sun.sun
     name: I see you
     tap_action:
       navigation_path: none
@@ -97,7 +97,7 @@ HABot will play mp3 file number 004 with volume level of 20  "payload:  mp3 20 0
 
 
 
-My UI vertical stock
+UI vertical stock EXAMPLE
 
 **********************************
 
@@ -111,7 +111,7 @@ cards:
       action: none
   - type: glance
     entities:
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: ERROR
         tap_action:
           navigation_path: none
@@ -121,7 +121,7 @@ cards:
           service_data:
             topic: HABot/Commands/Data
             payload: mp320003
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: I see you
         tap_action:
           navigation_path: none
@@ -131,7 +131,7 @@ cards:
           service_data:
             topic: HABot/Commands/Data
             payload: mp320004
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: POLICE
         tap_action:
           navigation_path: none
@@ -141,7 +141,7 @@ cards:
           service_data:
             topic: HABot/Commands/Data
             payload: mp320006
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: MDF
         tap_action:
           navigation_path: none
@@ -151,7 +151,7 @@ cards:
           service_data:
             topic: HABot/Commands/Data
             payload: mp320007
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: Notify
         tap_action:
           navigation_path: none
@@ -161,7 +161,7 @@ cards:
           service_data:
             topic: HABot/Commands/Data
             payload: mp320008
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: Color 1
         tap_action:
           navigation_path: none
@@ -171,7 +171,7 @@ cards:
           service_data:
             topic: HABot/Commands/Data
             payload: 1001
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: Color 2
         tap_action:
           navigation_path: none
@@ -181,7 +181,7 @@ cards:
           service_data:
             topic: HABot/Commands/Data
             payload: 1002
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: Color 3
         tap_action:
           navigation_path: none
@@ -191,7 +191,7 @@ cards:
           service_data:
             topic: HABot/Commands/Data
             payload: 1003
-      - entity: input_number.speed_control
+      - entity: sun.sun
         name: Color 4
         tap_action:
           navigation_path: none
@@ -206,7 +206,7 @@ cards:
     state_color: false
     show_name: true
   - type: iframe
-    url: http://Home_Assistant_IP_OR_Domain:8123/local/custom_lovelace/habot/index.html
+    url: http://YOUR_HOME_ASSISTANT_IP_OR_DOMAIN:8123/local/custom_lovelace/habot/index.html
     aspect_ratio: 53%
     title: HABot
   - type: entities
@@ -220,23 +220,5 @@ cards:
         icon: hass:motion
         name: Motion
 
-***************************************************************************************************
-
-
-
-
-
-Entities Card
-*****************************************
-type: entities
-entities:
-  - entity: sensor.habot_battery
-    name: Battery
-    icon: hass:battery
-  - entity: sensor.habot_light_level
-    name: Illumination
-  - entity: sensor.habot_motion_sensor
-    icon: hass:motion
-    name: Motion
 
 
