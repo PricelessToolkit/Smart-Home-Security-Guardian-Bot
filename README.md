@@ -101,4 +101,5 @@ Arduino Pro Mini 5v
 21: Aluminum or copper self-adhesive tape
 
 22: Resistors: 2 x 1K, 2 x 470R, 1x 10K
+
 23: Resistor 2x SMD 0806 2.7k
