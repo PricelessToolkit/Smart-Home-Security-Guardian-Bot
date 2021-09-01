@@ -48,7 +48,7 @@ HOME ASSISTANT Configuration
 
 1. In habot folder, file "app.js"  open it and change Your_HA_IP, Your_MQTT_Username, Your_MQTT_Password
 2. Copy habot folder to "config\www\custom_lovelace"  WARNING www folder is publicly avaliable !!!! "There is no access control" Use VPN or WireGuard (Your Phone > VPN Client > INTERNET > VPN Server > Home assistant
-3. In HOME ASSISTANT create sensor "battery, Motion, Light Level".  "telemetryhabot.yaml" file includeed 
+3. In HOME ASSISTANT create sensor "battery, Motion, Light Level".  "habot.yaml" file includeed 
 
 
 
