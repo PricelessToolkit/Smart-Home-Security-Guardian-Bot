@@ -1,0 +1,44 @@
+#######################################
+# Syntax Coloring Map for DFPlayer_Mini_Mp3
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+mp3_set_reply	KEYWORD2
+fill_uint16_bigend	KEYWORD2
+mp3_set_serial	KEYWORD2
+get_mp3_checksum	KEYWORD2
+mp3_fill_checksum	KEYWORD2
+mp3_play	KEYWORD2
+mp3_next	KEYWORD2
+mp3_prev	KEYWORD2
+mp3_set_volume	KEYWORD2
+mp3_set_EQ	KEYWORD2
+mp3_set_device	KEYWORD2
+mp3_sleep	KEYWORD2
+mp3_reset	KEYWORD2
+mp3_pause	KEYWORD2
+mp3_stop	KEYWORD2
+mp3_play_mp3	KEYWORD2
+mp3_get_state	KEYWORD2
+mp3_get_volume	KEYWORD2
+mp3_get_u_sum	KEYWORD2
+mp3_get_tf_sum	KEYWORD2
+mp3_get_flash_sum	KEYWORD2	
+mp3_get_tf_current	KEYWORD2
+mp3_get_u_current	KEYWORD2
+mp3_get_flash_current	KEYWORD2
+mp3_single_loop	KEYWORD2
+mp3_DAC	KEYWORD2
+mp3_random_play	KEYWORD2							
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+

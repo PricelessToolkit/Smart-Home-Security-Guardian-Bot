@@ -1,0 +1,15 @@
+If it is connected to ardunio, please use the ino in the folder to test.
+
+1. The files in the TF card should be cleared first. The format is: FAT32
+
+
+2. Copy the update.ufw (the name and suffix cannot be changed) to the card, don¡¯t change the name, don¡¯t put it in the subdirectory, put it in the root directory
+
+
+3. Plug in the TF card and power on, and you will hear a beep, indicating that the upgrade is complete
+
+
+4. Delete the upgrade file in the card and put back the previous track
+
+
+If it is connected to ardunio, please use the ino in the folder to test
