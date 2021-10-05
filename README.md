@@ -79,7 +79,7 @@ Arduino Pro Mini 5v
 
 10: LDR Light Dependent Resistor 5506 https://www.aliexpress.com/item/32623615207.html?spm=a2g0s.9042311.0.0.27424c4dsDn2mA
 
-11: 2x chipset servo SG90 or "not tested" https://www.aliexpress.com/item/1005001703606384.html?spm=a2g0o.cart.0.0.17523c00rWJPYe&mp=1
+11: 2x chipset servo SG90 or 2x "Servo controller tested working !" https://www.aliexpress.com/item/1005001703606384.html?spm=a2g0o.cart.0.0.17523c00rWJPYe&mp=1
 
 12: Charging board https://www.aliexpress.com/item/32816254080.html?spm=a2g0s.9042311.0.0.27424c4dwZKibe
 
