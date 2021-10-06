@@ -28,3 +28,44 @@ spin at the same speed for "Forward" and "backward" and of course in the right d
     steeringAnalogWrite(2, 0);
     steeringAnalogWrite(4, 0);
     }
+
+
+-------------------------------------------- For  ESC Version from Ali approximate PWM values------------------------------------
+
+https://www.aliexpress.com/item/1005001703606384.html?spm=a2g0o.cart.0.0.17523c00rWJPYe&mp=1
+
+
+
+if (Command == "right")
+		{
+		steeringAnalogWrite(4, 1260);
+		steeringAnalogWrite(2, 1160);
+    //Serial.println("ok");
+		}
+   
+
+
+	 if (Command == "left")
+		{
+		steeringAnalogWrite(2, 1260);
+		steeringAnalogWrite(4, 1160);
+		}
+
+
+   if (Command == "forward")
+    {
+    steeringAnalogWrite(2, 1500);
+    steeringAnalogWrite(4, 900);
+    }
+
+   if (Command == "backward")
+    {
+    steeringAnalogWrite(2, 1160);
+    steeringAnalogWrite(4, 1260);
+    }
+
+    if (Command == "stop")
+    {
+    steeringAnalogWrite(2, 0);
+    steeringAnalogWrite(4, 0);
+    }
