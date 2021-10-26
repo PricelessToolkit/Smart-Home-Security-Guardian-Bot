@@ -5,7 +5,7 @@ https://youtu.be/2BBThH_CpSE
 [![habot](https://github.com/PricelessToolkit/Smart-Home-Security-Guardian-Bot/blob/main/Images/Thumbinal_HABot.jpg)](https://youtu.be/2BBThH_CpSE)
 
 
-Do you want to support me ? Subscribe and like!  or <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="pricelestoolkit" data-color="#FFDD00" data-emoji=""  data-font="Comic" data-text="Buy me a fuel for brain" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+Do you want to support me ? Subscribe and like!  or 
 
 And who know how to program like a Jedi, look at the test folder, and if u can please contribute to the project, It will be wonderful.
 
