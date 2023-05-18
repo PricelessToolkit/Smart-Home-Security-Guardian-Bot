@@ -63,7 +63,7 @@ Arduino Pro Mini 5v
 * 10: LDR Light Dependent Resistor 5506 https://s.click.aliexpress.com/e/_A7hNt9
 * 11: 2x chipset servo SG90  https://s.click.aliexpress.com/e/_9Qcnwr   or 2x "Servo controller tested working !" https://s.click.aliexpress.com/e/_9G644J
 * 12: Charging board https://www.aliexpress.com/item/32816254080.html?spm=a2g0s.9042311.0.0.27424c4dwZKibe
-* 13: Led https://s.click.aliexpress.com/e/_AoFPrp
+* 13: Led WS2812 12xLED 5050 RGB https://s.click.aliexpress.com/e/_DBnUIml
 * 14: Level SHifter https://s.click.aliexpress.com/e/_AScY1h
 * 15: 1x Voltage supervisor https://s.click.aliexpress.com/e/_9HgdKX
 * 16: Battery WITH PROTECTION !!!! https://s.click.aliexpress.com/e/_AXWZJD
