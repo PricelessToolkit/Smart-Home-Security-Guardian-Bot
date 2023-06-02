@@ -1,19 +1,19 @@
-sensor:
- - platform: mqtt
-   name: "HABot Battery"
-   state_topic: "HABot/sensors"
-   json_attributes_topic: "HABot/sensors"
-   unit_of_measurement: '%'
-   value_template: '{{value_json.Bat}}'
- - platform: mqtt
-   name: "HABot Light Level"
-   state_topic: "HABot/sensors"
-   json_attributes_topic: "HABot/sensors"
-   unit_of_measurement: '%'
-   value_template: '{{value_json.Light}}'
- - platform: mqtt
-   name: "HABot Motion Sensor"
-   state_topic: "HABot/sensors"
-   json_attributes_topic: "HABot/sensors"
-   unit_of_measurement: ''
-   value_template: '{{value_json.Motion}}'
+mqtt:
+    sensor:
+     - name: "HABot Battery"
+       state_topic: "HABot/sensors"
+       json_attributes_topic: "HABot/sensors"
+       unit_of_measurement: '%'
+       value_template: '{{value_json.Bat}}'
+       
+     - name: "HABot Light Level"
+       state_topic: "HABot/sensors"
+       json_attributes_topic: "HABot/sensors"
+       unit_of_measurement: '%'
+       value_template: '{{value_json.Light}}'
+       
+     - name: "HABot Motion Sensor"
+       state_topic: "HABot/sensors"
+       json_attributes_topic: "HABot/sensors"
+       unit_of_measurement: ''
+       value_template: '{{value_json.Motion}}'
