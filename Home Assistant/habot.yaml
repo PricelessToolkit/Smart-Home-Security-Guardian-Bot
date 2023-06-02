@@ -4,12 +4,14 @@ mqtt:
        state_topic: "HABot/sensors"
        json_attributes_topic: "HABot/sensors"
        unit_of_measurement: '%'
+       device_class: battery
        value_template: '{{value_json.Bat}}'
        
      - name: "HABot Light Level"
        state_topic: "HABot/sensors"
        json_attributes_topic: "HABot/sensors"
        unit_of_measurement: '%'
+       device_class: illuminance
        value_template: '{{value_json.Light}}'
        
      - name: "HABot Motion Sensor"
