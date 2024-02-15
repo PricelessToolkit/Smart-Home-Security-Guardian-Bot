@@ -57,7 +57,7 @@ Arduino Pro Mini 5v
 * 4: Wireless charger https://s.click.aliexpress.com/e/_AYQFs7
 * 5: wireless charger receiver 2x2cm https://s.click.aliexpress.com/e/_API7jD
 * 6: 2x Motor Single side 90deg size D https://s.click.aliexpress.com/e/_AmKxZ5
-* 7: 2x Wheel https://s.click.aliexpress.com/e/_AWvj1V
+* 7: 2x Wheel https://s.click.aliexpress.com/e/_DlZWzxj
 * 8: DF Player https://s.click.aliexpress.com/e/_9IVHIR
 * 9: RCWL 0516 Microwave Radar Sensor https://s.click.aliexpress.com/e/_ADjEIj
 * 10: LDR Light Dependent Resistor 5506 https://s.click.aliexpress.com/e/_A7hNt9
